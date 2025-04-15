@@ -15,7 +15,7 @@ interface FormFieldProps<T extends FieldValues> {
   type?: "text" | "email" | "password";
 }
 
-export const FormField = ({
+export const FormField = <T extends FieldValues>({
   control,
   name,
   label,
